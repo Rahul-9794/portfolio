@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li ><a href="#contact">Contact</a></li>
+          <button onclick="darkMode()">Darkmode</button>
+          <button onclick="lightMode()">LightMode</button>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <h1 id="DarkModetext">Your Name Rahul</h1>
+      <p>A short bio about you. I am become in software engineer</p>
+      <img src="images.jpg" />
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <!-- <h3>Project 1</h3> -->
+        <p>Project Name.</p>
+        <!-- <a href="#">First Project</a> -->
+      </div>
+      <div>
+        <!-- <h3>Project 2</h3> -->
+        <p>Short description</p>
+        <!-- <a href="#">Second Project</a> -->
+      </div>
+      <div>
+        <!-- <h3>Project 3</h3> -->
+        <p>Link send for the github Account.</p>
+        <a href="https://www.facebook.com/">My github Link Here... </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" onclick="alert('Form submitted!')">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h1>Motivational Shayari</h1>
+      <div id="quote-box">
+        <p id="quote">Loading quote...</p>
+        <p id="author"></p>
+      </div>
+      <button onclick="fetchQuote()">Get New Quote</button>
+    </section>
+
+    <!-- <section> -->
+    <footer>
+      <p>&copy; <span id="year"></span>Your Name. All Rights Reserved.</p>
+    </footer>
+    <!-- </section> -->
+    <script src="script.js"></script>
+  </body>
+</html>
